@@ -104,3 +104,10 @@ footer p{
 footer a {
     color: #0E76A8;
 }
+
+td img {
+    max-width: 25px;
+    max-height: 25px;
+    margin: 0;
+}
+
