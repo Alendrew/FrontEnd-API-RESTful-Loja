@@ -1,11 +1,10 @@
 const url = 'https://apirestful-loja-03f61481ea62.herokuapp.com/products';
 var html = "";
-const headers = new Headers();
-headers.append('Content-Type', 'application/json');
-fetch(url)
-  .then(response => response.json())
-  .then(data => {
+axios.get(url)
+  .then(function (response) {
+    const data = response.data;
     data.sort((a, b) => a.id - b.id);
+    console.log(data);
     for (product in data) {
       const productData = data[product]
       html +=
@@ -22,6 +21,7 @@ fetch(url)
     }
     document.getElementById('tabela').innerHTML = html
   })
-  .catch(error => {
-    console.error('Erro:', error);
-  });
+  .catch(function (error) {
+    console.error(error);
+  })
+

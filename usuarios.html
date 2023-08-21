@@ -9,6 +9,9 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="icon" href="assets/images/user.png" type="image/png">
     <link rel="stylesheet" href="css/edicao.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts/script-usuarios.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -55,8 +58,8 @@
                                 <input type="number" class="form-control" id="telefone"
                                     placeholder="99999999999">
                             </div>
-                            <label for="inputPassword5" class="form-label">Senha:</label>
-                            <input type="password" id="senha" class="form-control" aria-describedby="passwordHelpBlock">
+                            <!-- <label for="inputPassword5" class="form-label">Senha:</label>
+                            <input type="password" id="senha" class="form-control" aria-describedby="passwordHelpBlock"> -->
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -95,12 +98,12 @@
                                 <input type="number" class="form-control" id="edit_telefone"
                                     placeholder="99999999999">
                             </div>
-                            <label for="inputPassword5" class="form-label">Senha:</label>
+                            <!-- <label for="inputPassword5" class="form-label">Senha:</label>
                             <input type="text" id="edit_senha" class="form-control"
                                 aria-describedby="passwordHelpBlock">
                             <div id="passwordHelpBlock" class="form-text">
                                 Sua senha deve conter 1 dígito numérico e 8 caracteres. 
-                            </div>
+                            </div> -->
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -114,11 +117,9 @@
     <footer>
         <p>Developed by <a href="https://www.linkedin.com/in/dev-alencar/">André Alencar</a></p>
     </footer>
-    <script src="scripts/script-usuarios.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        crossorigin="anonymous">
+    </script>
 </body>
-
 </html>
