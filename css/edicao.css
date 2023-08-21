@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size:13px;
+    overflow-x:hidden;
+    background-color: #F4FFF8;
+}
+
+header {
+    background-color: #0F0F0F;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+}
+
+header a, img {
+   width: 40px;
+   height: 40px;
+   position: fixed;
+   margin: 10px;
+}
+
+header a img {
+    margin: 0;
+    left: 0;
+    margin-left: 10px;
+}
+
+header img {
+    right: 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.criar {
+    background-color: transparent;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+.criar:hover {
+    background-color: transparent;
+}
+
+header a img:hover, .criar:hover, .edit-button:hover, .delete-button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    width: 100vw;
+    height: calc(100vh - 120px);
+}
+
+.table-dark{
+    margin: 10px;
+}
+.td-button {
+    width: 10px;
+}
+.edit-button, .delete-button {
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.edit-button{
+    background-image: url("../assets/images/editar.png");
+}
+.delete-button{
+    background-image: url("../assets/images/excluir.png");
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20px;
+    color: white;
+    bottom: 0;
+    background-color: #2D2E2E;
+}
+footer p{
+    margin: 0;
+}
+footer a {
+    color: #0E76A8;
+}
